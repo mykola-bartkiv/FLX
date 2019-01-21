@@ -1,0 +1,114 @@
+.box-bg:hover {
+  background-color: #87cefa; }
+  .box-bg:hover .tm-section-title {
+    color: #fff;
+    font-weight: 700; }
+
+p::first-letter {
+  font-size: 30px;
+  color: #87cefa; }
+
+.tm-content-box,
+.tm-sidebar {
+  -webkit-box-shadow: 0px 0px 4px 2px grey;
+  box-shadow: 0px 0px 4px 2px grey; }
+
+.tm-banner {
+  background: #f5f5f5; }
+
+.tm-banner-inner {
+  background: #ffffff; }
+
+.tm-content-box:not(#home) {
+  position: relative; }
+  .tm-content-box:not(#home)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 40px 240px 0 0;
+    border-color: #87cefa transparent transparent transparent; }
+
+.carousel-content .tm-section-title {
+  color: gainsboro;
+  letter-spacing: 5px; }
+
+h2 + p {
+  font-style: italic; }
+
+p:not(.tm-banner-text) {
+  line-height: 2;
+  text-indent: 2em; }
+
+.heading a {
+  color: #000000; }
+.heading a:visited {
+  text-decoration: underline; }
+.heading a:hover {
+  color: #87cefa;
+  text-decoration-style: double; }
+.heading .text::after {
+  content: 'New';
+  color: red;
+  font-size: 10px;
+  vertical-align: super; }
+
+.box-work {
+  padding: 8px; }
+  .box-work:nth-child(2n) {
+    background-color: #f5f5f5; }
+  .box-work p {
+    line-height: 1.5;
+    text-indent: 0; }
+    .box-work p::first-letter {
+      color: grey; }
+
+.blocks {
+  background-color: #f5f5f5; }
+
+.mandatory-field {
+  position: relative; }
+  .mandatory-field::after {
+    content: "*";
+    color: red;
+    font-weight: 700; }
+
+.btn-wrap {
+  text-align: right; }
+
+.submit-btn {
+  background-color: transparent;
+  border-color: #87cefa;
+  color: #87cefa;
+  border-radius: 0;
+  padding: 15px 50px;
+  font-weight: 300; }
+  .submit-btn:hover {
+    background-color: #87cefa;
+    border-color: #87cefa;
+    color: #ffffff; }
+
+.tm-nav-item-link:hover {
+  background-color: #f5f5f5; }
+
+@media print {
+  .tm-content-box:before {
+    display: none; }
+
+  #about,
+  .heading,
+  .blocks,
+  #ideas,
+  .form-box {
+    display: none; }
+
+  .flex-2-col {
+    display: flex;
+    align-items: center; }
+    .flex-2-col .flex-item {
+      flex-basis: 50%; }
+    .flex-2-col img {
+      width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
