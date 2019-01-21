@@ -10,7 +10,6 @@ p::first-letter {
 
 .tm-content-box,
 .tm-sidebar {
-  -webkit-box-shadow: 0px 0px 4px 2px grey;
   box-shadow: 0px 0px 4px 2px grey; }
 
 .tm-banner {
@@ -86,8 +85,8 @@ p:not(.tm-banner-text) {
   font-weight: 300; }
   .submit-btn:hover {
     background-color: #87cefa;
-    border-color: #87cefa;
-    color: #ffffff; }
+    color: #ffffff;
+    border-color: #87cefa; }
 
 .tm-nav-item-link:hover {
   background-color: #f5f5f5; }
