@@ -1,0 +1,156 @@
+body {
+	margin: 0;
+	font: $font;
+	color: $mainTextColor;
+	background-color: $mainBackgroundColor;
+}
+
+.btn {
+	line-height: 45px;
+	min-width: 200px;
+	color: $buttonTextColor;
+	text-transform: uppercase;
+	background-color: $buttonColor;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	&:hover {
+		background-color: darken($buttonColor, 10%);
+	}
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 1.6em;
+}
+
+header {
+	background-image: url($backgroundImage);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	.top-wrapper {
+		display: flex;
+		justify-content: space-between;
+		.logo {
+			flex-basis: 15%;
+			img {
+				width: 100%;
+			}
+		}
+		nav {
+			flex: 1;
+			text-align: right;
+			font-size: 0;
+			a {
+				display: inline-block;
+				font: $font;
+				padding: 20px 10%;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: $menuTextColor;
+				text-decoration: none;
+				border-right: 2px solid $borderColor;
+				&:last-child {
+					border-right: none;
+				}
+				&:hover {
+					background-color: darken($buttonColor, 10%);
+				}
+			}
+		}
+	}
+	section {
+		text-align: center;
+		padding: 20vh 0;
+		h1 {
+			color: $menuTextColor;
+		}
+	}
+}
+main {
+	width: 960px;
+	margin: 0 auto;
+	max-width: 94%;
+	padding: 20px 0;
+	h1 {
+		text-align: right;
+		margin-bottom: 0;
+	}
+}
+.toolbar {
+	text-align: right;
+	input[type="text"] {
+		border: 1px solid $borderColor;
+		padding: 10px 20px;
+		background-color: transparent;
+	}
+}
+article {
+	background-color: $articleColor;
+	padding: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	> div {
+		padding: 10px;
+	}
+	.post-description {
+		color: $dateTextColor;
+		font-size: 0.8em;
+		border-bottom: 1px solid $borderColor;
+	}
+	h3 {
+		text-transform: uppercase;
+		color: $postTitleColor;
+		margin: 5px 0;
+	}
+	p {
+		margin: 5px 0 20px;
+	}
+	.btn {
+		float: right;
+	}
+}
+.about {
+	margin-top: 65px;
+	img {
+		width: 100%;
+	}
+}
+.contact-form {
+	margin-top: 65px;
+	text-align: right;
+	h4 {
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+	.wrap {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 20px;
+		* {
+			flex-basis: 49.5%;
+		}
+	}
+	label {
+		color: $labelTextColot;
+		display: block;
+	}
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		width: 100%;
+		padding: 15px 20px;
+		border: 1px solid $borderColor;
+		box-sizing: border-box;
+		background-color: transparent;
+	}
+}
+footer {
+	padding: 15px;
+}
+
+
