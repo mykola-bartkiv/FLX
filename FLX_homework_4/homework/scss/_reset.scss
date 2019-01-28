@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	background-color: $bodyColor;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+p {
+	line-height: 1.2;
+}
+input[type="email"] {
+	line-height: 35px;
+	border: 1px solid $black;
+	background-color: $colorInput;
+	padding: 0 10px;
+	max-width: 150px;
+	&::placeholder {
+		color: $black;
+	}
+}
+input[type="submit"] {
+	line-height: 37px;
+	background-color: $btnColor;
+	color: $white;
+	border: none;
+	font-weight: 700;
+	padding: 0 10px;
+	margin-left: 10px;
+	cursor: pointer;
+	&:hover {
+		background-color: darken($btnColor, 10%);
+	}
+}

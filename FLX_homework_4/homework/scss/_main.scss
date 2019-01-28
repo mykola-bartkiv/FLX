@@ -1,0 +1,253 @@
+.container {
+	width: 96%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.btn {
+	display: inline-block;
+	line-height: 33px;
+	font-weight: 700;
+	background-color: $btnColor;
+	color: $white;
+	text-decoration: none;
+	font-size: 0.8em;
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+	&:hover {
+		background-color: darken($btnColor, 10%);
+	}
+}
+.form-wrapper {
+	width: 240px;
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	input[type="email"] {
+		flex-basis: 59%;
+	}
+	input[type="submit"] {
+		flex-basis: 39%;
+	}
+}
+header {
+	background-image: url($headerImage);
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 5vh 0 22vh;
+	.top-wrapper {
+		display: flex;
+		justify-content: space-between;
+		.logo {
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: $headerColor;
+		}
+		.login-wrapper {
+			a {
+				color: $headerColor;
+				text-decoration: none;
+				margin: 0 30px;
+				&:last-child {
+					margin-right: 0;
+				}
+				&:hover {
+					color: $grey;
+				}
+			}
+		}
+	}
+	.top-info {
+		text-align: center;
+		h1 {
+			font-size: 3em;
+			color: $headerColor;
+			text-transform: uppercase;
+			letter-spacing: 10px;
+			span {
+				font-size: 1.8em;
+			}
+		}
+		p {
+			color: $headerColor;
+		}
+	}
+	.buttons-wrapper {
+		display: flex;
+		justify-content: space-around;
+		.btn-header {
+			padding: 15px 80px;
+			border: 2px solid $white;
+			color: $headerColor;
+			text-decoration: none;
+			background-color: rgba(0, 0, 0, 0.3);
+			&:hover {
+				background-color: $grey;
+			}
+		}
+	}
+}
+main {
+	position: relative;
+	z-index: 0;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 220px;
+		background-color: #000000;
+		clip-path: polygon(0 0, 100% 0, 100% 100%);
+		z-index: -1;
+	}
+}
+.top-text-wrapper {
+	margin-bottom: 60px;
+	.text-right {
+		width: 48%;
+		margin: 0 0 50px auto;
+		p {
+			color: $white;
+		}
+	}
+	.text-left {
+		width: 48%;
+	}
+}
+.info-box {
+	margin-bottom: 65px;
+	h2 {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.info-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		.image {
+			flex-basis: 48%;
+			background-image: url('../img/sample.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			color: $white;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			padding: 20px;
+			.likes-box {
+				margin-left: auto;
+				padding: 8px 10px;
+				border: 2px solid $white;
+				font-size: 0.8em;
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+		}
+		.text {
+			flex-basis: 48%;
+			text-align: center;
+			padding: 30px 0 20px;
+			p {
+				margin-bottom: 65px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+.items-wrapper {
+	background-color: $white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 35px 0 70px;
+	.item {
+		flex-basis: 320px;
+		margin: 0 20px;
+		padding: 20px;
+		box-shadow: 0px 2px 3px 1px $grey;
+		p {
+			margin-bottom: 25px;
+			font-size: 0.9em;
+		}
+	}
+}
+.subscribe-wrapper {
+	padding: 45px 0;
+	.container {
+		width: 98%;
+	}
+	p {
+		font-size: 0.9em;
+		margin-bottom: 15px;
+	}
+	.form-wrapper {
+		width: 580px;
+		margin-left: auto;
+		display: flex;
+		h2 {
+			margin-right: 20px;
+		}
+		form {
+			display: flex;
+		}
+	}
+}
+.footer-info {
+	padding: 115px 0 95px;
+	background-color: $white;
+	.footer-wrapper {
+		display: flex;
+		justify-content: space-between;
+		.item {
+			flex-basis: 410px;
+			margin: 0 15px;
+			h3 {
+				font-weight: 700;
+				letter-spacing: -1px;
+				margin-bottom: 20px;
+			}
+			p {
+				letter-spacing: -1px;
+				color: $grey;
+				margin-bottom: 10px;
+				span {
+					color: $spanColor;
+				}
+			}
+			form {
+				display: flex;
+			}
+		}
+	}
+}
+footer {
+	background-color: $white;
+	.footer-wrapper {
+		border-top: 1px solid $footerBorder;
+		padding: 15px 0 20px;
+		display: flex;
+		justify-content: space-between;
+		.cotyright {
+			color: $grey;
+		}
+		a {
+			color: $black;
+			text-decoration: none;
+			margin: 0 12px;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				color: $grey;
+			}
+		}
+	}
+}
