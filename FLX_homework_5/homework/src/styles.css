@@ -1,0 +1,226 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+body {
+  font-family: roboto;
+  background-color: #0b192f;
+  margin: 0 15px 5px;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+header {
+  background-color: #162b4d;
+  margin-bottom: 25px;
+  padding: 0 65px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .burger {
+  display: none;
+}
+header .burger span {
+  width: 15px;
+  height: 1px;
+  display: block;
+  margin: 5px 0;
+  background-color: #fff;
+}
+header .logo-text {
+  color: #fff;
+  font-weight: 100;
+  font-size: 45px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+header .logo-text span {
+  color: #B71757;
+}
+header nav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 45px 25px;
+}
+header nav a:hover {
+  background-color: #b8b8b8;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 25px;
+}
+article {
+  flex-basis: 75%;
+}
+.post-wrapper {
+  display: flex;
+}
+.post-wrapper figure {
+  flex-basis: 50%;
+  font-size: 0;
+  margin: 0;
+  position: relative;
+}
+.post-wrapper figure:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.post-wrapper .info {
+  flex: 1;
+  display: flex;
+}
+.post-wrapper .text {
+  padding: 45px;
+}
+.post-wrapper h2 {
+  font-size: 55px;
+  font-weight: 100;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin: 0 0 30px;
+}
+.post-wrapper h2:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.post-wrapper p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #fff;
+  opacity: 0.7;
+  margin: 0;
+}
+.post-wrapper .date {
+  padding: 15px;
+}
+.post-wrapper h3 {
+  color: #fff;
+  font-size: 30px;
+  opacity: 0.4;
+  font-weight: 100;
+  margin: 0;
+}
+.post-wrapper h3 span {
+  font-size: 60px;
+}
+.post-wrapper:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+.post-wrapper:nth-child(2n) .info {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+aside {
+  flex-basis: 23%;
+}
+.last-news {
+  background-color: #fff;
+  margin-bottom: 25px;
+}
+.last-news figure {
+  margin: 0;
+}
+.last-news .info {
+  padding: 35px 40px 45px;
+}
+.last-news h3 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0 0 15px;
+}
+.last-news p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.7;
+}
+footer {
+  background-color: #162b4d;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+}
+footer p {
+  color: #fff;
+  opacity: 0.4;
+  font-weight: 100;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.7;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    display: block;
+    text-align: center;
+    padding: 0 30px 70px;
+  }
+  header .burger {
+    display: inline-block;
+    margin: 30px 0 70px;
+  }
+  header nav {
+    display: none;
+  }
+  article {
+    flex-basis: 59%;
+  }
+  .post-wrapper {
+    display: block;
+  }
+  .post-wrapper .info {
+    display: block;
+  }
+  .post-wrapper:nth-child(2n) .info {
+    text-align: left;
+  }
+  .post-wrapper .date {
+    text-align: center;
+  }
+  aside {
+    flex-basis: 39%;
+  }
+  footer {
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main {
+    display: block;
+  }
+  .post-wrapper .text {
+    padding: 20px;
+  }
+  .post-wrapper h2 {
+    letter-spacing: 0;
+  }
+}
