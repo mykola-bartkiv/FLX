@@ -7,16 +7,20 @@ b = Number(b);
 c = Number(c);
 
 if (!isNaN(a)&&!isNaN(b)&&!isNaN(c)) {
-	var d = b * b - 4 * a * c;
-	if (d > 0) {
-		var x1 = ( -b + Math.sqrt(d) ) / ( 2 * a );
-		var x2 = ( -b - Math.sqrt(d) ) / ( 2 * a );
-		alert( 'x1 = ' + x1 + ' and x2= ' + x2 );
-	} else if (d === 0) {
-		var x = (-b) / (2 * a);
-		alert( 'x = ' + x );
+	if (a !== 0 && b !== 0 && c !== 0) {
+		var d = b * b - 4 * a * c;
+		if (d > 0) {
+			var x1 = ( -b + Math.sqrt(d) ) / ( 2 * a );
+			var x2 = ( -b - Math.sqrt(d) ) / ( 2 * a );
+			alert( 'x1 = ' + x1 + ' and x2= ' + x2 );
+		} else if (d === 0) {
+			var x = (-b) / (2 * a);
+			alert( 'x = ' + x );
+		} else {
+			alert('No solution');
+		}
 	} else {
-		alert('No solution');
+		alert('Write a number greater than "0"');
 	}
 } else {
 	alert('Invalid input data');
