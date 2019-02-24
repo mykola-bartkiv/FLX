@@ -7,7 +7,7 @@ title.addEventListener('change', function() {
     let start = 0;
     let mes = document.getElementsByClassName('mainTitle')[start];
     let max = 10;
-    if (listBox.childNodes.length < max) {
+    if (listBox.childNodes.length <= max) {
         if (title.value) {
             addButton.classList.remove('disable');
             addButton.addEventListener('click', clickPlus);
