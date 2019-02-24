@@ -1,0 +1,97 @@
+body {
+  font-family: 'Roboto'; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+#root {
+  width: 750px;
+  max-width: 100%;
+  min-height: 590px;
+  margin: 20px auto;
+  border: 2px solid #000;
+  padding: 20px 45px 20px 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  #root .mainTitle {
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: -0.5px;
+    padding-bottom: 30px; }
+    #root .mainTitle span {
+      display: block;
+      font-size: 20px;
+      color: red; }
+  #root .add-list-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #000; }
+    #root .add-list-box .input-wrapper {
+      flex: 1;
+      padding: 0 20px; }
+      #root .add-list-box .input-wrapper input {
+        width: 100%;
+        line-height: 28px;
+        font-size: 18px;
+        border: 1px solid #000;
+        padding: 0 4px; }
+        #root .add-list-box .input-wrapper input::placeholder {
+          color: #c0c0cc; }
+    #root .add-list-box #add-btn {
+      flex-basis: 30px;
+      text-align: center;
+      line-height: 30px;
+      background-color: #000;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 700;
+      transition: 0.3s; }
+      #root .add-list-box #add-btn.disable {
+        background-color: #4d4d4d; }
+        #root .add-list-box #add-btn.disable:hover {
+          cursor: not-allowed; }
+      #root .add-list-box #add-btn:hover {
+        cursor: pointer;
+        background-color: #4d4d4d; }
+  #root #list-box {
+    padding: 20px 0 20px 20px; }
+    #root #list-box .list-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px; }
+      #root #list-box .list-item .item-wrapper {
+        display: flex;
+        align-items: center;
+        font-size: 18px; }
+        #root #list-box .list-item .item-wrapper:hover {
+          cursor: pointer; }
+        #root #list-box .list-item .item-wrapper span {
+          width: 30px;
+          height: 30px;
+          border: 3px solid #000;
+          border-radius: 2px;
+          margin-right: 15px; }
+        #root #list-box .list-item .item-wrapper i {
+          background-color: #000;
+          color: #fff;
+          font-weight: 700; }
+      #root #list-box .list-item .delete-icon {
+        font-size: 40px;
+        transition: 0.3s;
+        display: block;
+        text-align: center;
+        height: 100%; }
+        #root #list-box .list-item .delete-icon:hover {
+          color: #4d4d4d;
+          cursor: pointer; }
+  #root .pets-icon {
+    text-align: center;
+    font-size: 90px; }
+
